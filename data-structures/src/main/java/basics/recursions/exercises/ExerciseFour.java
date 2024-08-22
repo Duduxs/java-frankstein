@@ -4,13 +4,17 @@ public class ExerciseFour {
 
     public static String convertToBinary(int number) {
         var result = convertToBinaryHelper(number);
-        return invertString(result, new StringBuilder(), result.length()-1);
+        return invertString(result);
     }
 
     private static String convertToBinaryHelper(int number) {
         var div = number / 2;
         if (div <= 0) return "" + number;
         return number % 2 + convertToBinaryHelper(div);
+    }
+
+    private static String invertString(String data) {
+        return invertString(data, new StringBuilder(), data.length()-1);
     }
 
     private static String invertString(String data, StringBuilder newData, int index) {
