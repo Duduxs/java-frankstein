@@ -12,7 +12,6 @@ public class ExerciseSix {
         return calculateArithmeticProgression(terms, ++actualTerms, data, actual, reason);
     }
 
-
     public static void main(String[] args) {
         System.out.println(calculateArithmeticProgression(5, 0.80, 0.58)); //>> 0.8 >> 1.38 >> 1.96 >> 2.54 >> 3.12
         System.out.println(calculateArithmeticProgression(2, 0.80, 0.58)); // >> 0.80 >> 1.38
